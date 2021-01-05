@@ -8,4 +8,10 @@ module.exports = function (app) {
 
     app.route('/tampil')
         .get(myjson.tampilAll);
+
+    app.route('/tampil/:id')
+        .get(myjson.tampilID);
+
+    app.route('/saveformulir')
+        .post(myjson.tambahDataForm);
 };
